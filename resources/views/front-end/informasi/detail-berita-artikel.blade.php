@@ -10,7 +10,7 @@
 <section class="px-6 md:px-20 py-20 bg-[#F5F5F5] text-[#000000]" id="detail-berita">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         <!-- Kolom Kiri (Detail Berita) -->
-        <div class="md:col-span-2 bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center gap-8 hero-text">
+        <div class="md:col-span-2 bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center gap-8 hero-text sr-hidden">
             <h1 class="text-3xl md:text-4xl font-extrabold text-center">{{ $berita->judul }}</h1>
             <h3 class="text-gray-500 font-semibold text-center">
                 <i class="fas fa-calendar-alt mr-2"></i>
@@ -48,7 +48,8 @@
                 </div>
 
                  <!-- Isi Berita -->
-                <div class="prose prose-lg text-gray-700 text-left max-w-[600px] w-full mt-6 leading-relaxed break-words hyphens-auto">
+                <!-- Isi Berita -->
+                <div class="prose prose-lg text-gray-700 text-left md:text-justify max-w-[600px] w-full mt-6 leading-relaxed break-words">
                     {!! $berita->deskripsi !!}
                 </div>
             </div>
@@ -60,7 +61,7 @@
         </div>
 
         <!-- Kolom Kanan (List Berita Lain) -->
-        <aside class="space-y-6 hero-img">
+        <aside class="space-y-6 hero-img sr-hidden">
             <h2 class="text-xl font-bold text-[#000000] mb-4">Berita Lainnya</h2>
             @forelse ($beritaLain as $item)
             <a href="{{ route('berita.show', $item->slug) }}" class="flex items-start gap-4 bg-white p-4 rounded-xl shadow hover:shadow-md transition group">

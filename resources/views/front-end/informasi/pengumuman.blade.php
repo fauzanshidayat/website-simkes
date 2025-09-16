@@ -5,7 +5,7 @@
     <section class="px-6 md:px-20 py-20 text-[#067344] text-center bg-[#F5F5F5]" id="pengumuman">
         <div class="max-w-7xl mx-auto">
             <h2
-                class="text-4xl font-extrabold mb-12 text-center border-b-4 border-[#FFBB00] inline-block pb-2 mx-auto max-w-max sr-title">
+                class="text-4xl font-extrabold mb-12 text-center border-b-4 border-[#FFBB00] inline-block pb-2 mx-auto max-w-max sr-title sr-hidden">
                 Pengumuman
             </h2>
 
@@ -13,7 +13,7 @@
             <div class="grid gap-10 md:grid-cols-3">
                 @foreach ($pengumuman as $item)
                     <article
-                        class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 sr-box sr-hidden">
 
                         <!-- Gambar -->
                         @if ($item->gambar)

@@ -11,7 +11,7 @@
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
         <!-- Kolom Kiri: Detail Pengumuman -->
-        <div class="md:col-span-2 bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center gap-8 hero-text">
+        <div class="md:col-span-2 bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center gap-8 hero-text sr-hidden">
             <h1 class="text-3xl md:text-4xl font-extrabold text-center">{{ $pengumuman->judul }}</h1>
             <h3 class="text-gray-500 font-semibold text-center">
                 <i class="fas fa-calendar-alt mr-2"></i>
@@ -45,7 +45,7 @@
                 </div>
                 @endif
 
-                <div class="prose prose-lg text-gray-700 text-left max-w-[600px] w-full mt-6 leading-relaxed break-words hyphens-auto">
+                 <div class="prose prose-lg text-gray-700 text-left max-w-[600px] w-full mt-6 leading-relaxed break-words">
                     {!! $pengumuman->deskripsi !!}
                 </div>
             </div>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Kolom Kanan: Pengumuman Lainnya -->
-        <aside class="space-y-6 hero-img">
+        <aside class="space-y-6 hero-img sr-hidden">
             <h2 class="text-xl font-bold text-[#000000] mb-4">Pengumuman Lainnya</h2>
             @forelse ($pengumumanLain as $item)
             <a href="{{ route('pengumuman.show', $item->slug) }}" class="flex items-start gap-4 bg-white p-4 rounded-xl shadow hover:shadow-md transition group">

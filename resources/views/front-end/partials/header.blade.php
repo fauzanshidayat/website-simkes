@@ -42,6 +42,10 @@
 
     <style>
         html { scroll-behavior: smooth }
+        /* Preloader biar smooth hilangnya */
+        
+        /* Semua elemen yang akan di-animate disembunyikan sejak awal */
+      
     </style>
 </head>
 

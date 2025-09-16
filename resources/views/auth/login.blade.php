@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Login Section -->
-    <section class="min-h-screen flex items-center justify-center bg-[#F5F5F5] px-4">
+    <section class="min-h-screen flex items-center justify-center bg-[#F5F5F5] px-4 sr-box sr-hidden">
         <div class="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 bg-white rounded-xl shadow-lg p-6">
             <!-- Logo / Judul -->
             <div class="text-center mb-8">

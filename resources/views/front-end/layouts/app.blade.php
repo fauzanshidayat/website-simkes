@@ -57,7 +57,7 @@
                             <a href="{{ route('berita.index') }}" class="hover:text-[#FFBB00]">Berita Dan Artikel</a>
                         </li>
                         <li><a href="{{ route('pengumuman.index') }}" class="hover:text-[#FFBB00]">Pengumuman</a></li>
-                        <li><a href="{{ route('simkes') }}" class="hover:text-[#FFBB00]">SIMKES</a></li>
+                        <li><a href="https://simkes.nurulalami.sch.id/" target="_blank" class="hover:text-[#FFBB00]">SIMKES</a></li>
                         <li><a href="https://shorturl.at/BYi5I" target="_blank" class="hover:text-[#FFBB00]">PPSB</a>
                         </li>
                         <li><a href="{{ route('ikppm-na') }}" class="hover:text-[#FFBB00]">IKPPM-NA</a></li>

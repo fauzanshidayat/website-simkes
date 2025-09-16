@@ -5,7 +5,7 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
             <!-- Kolom Teks -->
             <div
-                class="hero-text w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                class="hero-text sr-hidden w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
                 <h2 class="text-4xl font-extrabold mb-6 border-b-4 border-[#FFBB00] text-[#067344] inline-block pb-2">
                     Madrasah Aliyah
                 </h2>
@@ -20,7 +20,7 @@
                 </p>
             </div>
             <!-- Kolom Gambar -->
-            <div class="relative hero-img w-full md:w-1/2 flex justify-center items-center">
+            <div class="relative hero-img sr-hidden w-full md:w-1/2 flex justify-center items-center">
                 <img alt="visi misi" class="rounded-3xl shadow-2xl border-4 border-[#067344] max-w-full h-auto"
                     src="{{ asset('assets/img/ma.jpg') }}" />
             </div>
